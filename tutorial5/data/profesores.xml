@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Body>
+    <dlwmin:findAllProfesorResponse xmlns:dlwmin="http://service" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <return xsi:type="profesorDTO">
+    <area>Matematica</area>
+    <cedula>202220222</cedula>
+    <correo>luis@xyz.com</correo>
+    <nombre>Luis Torres</nombre>
+    <telefono>6677-3456</telefono>
+    <titulo>Master</titulo>
+    </return>
+    <return xsi:type="profesorDTO">
+    <area>Quimica</area>
+    <cedula>404440444</cedula>
+    <correo>joaquin@xyz.com</correo>
+    <nombre>Joaquin Soto</nombre>
+    <telefono>3333-7890</telefono>
+    <titulo>Ingeniero</titulo>
+    </return>
+    <return xsi:type="profesorDTO">
+    <area>Estadistica</area>
+    <cedula>101110111</cedula>
+    <correo>carlos@xyz.com</correo>
+    <nombre>Carlos Perez</nombre>
+    <telefono>3456-7890</telefono>
+    <titulo>Licenciado</titulo>
+    </return>
+    <return xsi:type="profesorDTO">
+    <area>Administracion</area>
+    <cedula>303330333</cedula>
+    <correo>castro@xyz.com</correo>
+    <nombre>Juan Castro</nombre>
+    <telefono>67455-7788</telefono>
+    <titulo>Licenciado</titulo>
+    </return>
+    </dlwmin:findAllProfesorResponse>
+    </soapenv:Body>
+    </soapenv:Envelope>
+

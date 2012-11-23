@@ -1,0 +1,9 @@
+framux.route('profesores',
+           {template:'partials/profesor-list.html',
+            controller:'ProfesorList',
+            selector:'#content'})
+      .route('profesor/:profId',
+           {template:'partials/profesor-detail.html',
+           controller:'ProfesorDetail',
+           selector:'#content'});
+framux.go('profesores');

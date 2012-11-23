@@ -1,0 +1,17 @@
+<div>
+  <h2>Detalle de profesor</h2>
+  <table><tr>
+    <td>Cédula</td><td><input value="{{=$.prof._cedula}}" onChange="framux.bind('$.prof._cedula',this)"/></td>
+    <td>Nombre</td><td><input value="{{=$.prof._nombre}}" onChange="framux.bind('$.prof._nombre',this)"/></td></tr>
+    <tr><td>Título</td><td><input value="{{=$.prof._titulo}}" onChange="framux.bind('$.prof._titulo',this)"/></td>
+    <td>Area</td><td><input value="{{=$.prof._area}}" onChange="framux.bind('$.prof._area',this)"/></td></tr>
+    <tr><td>Correo</td><td><input value="{{=$.prof._correo}}" onChange="framux.bind('$.prof._correo',this)"/></td>
+    <td>Telefono</td><td><input value="{{=$.prof._telefono}}" onChange="framux.bind('$.prof._telefono',this)"/></td>
+  </tr></table>
+  <a href="#profUpdate/{{=$.prof._id}}">
+    <input type="button" value="Actualizar" id="button"/>
+  </a>
+  <a href="#profDelete/{{=$.prof._id}}">
+    <input type="button" value="Eliminar" id="button"/>
+  </a>
+</div>

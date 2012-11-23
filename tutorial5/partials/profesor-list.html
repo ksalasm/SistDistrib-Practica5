@@ -1,0 +1,25 @@
+<div>
+  <h2>Listado de profesores</h2>
+  <br/>
+  <table>
+    <thead>
+      <th>Nombre</th><th>Título</th>
+      <th>Area</th><th>Teléfono</th>
+      <th>Acción</th>
+    </thead>
+    {{~$.profesores:profesor}}
+    <tr>
+      <td>{{=profesor.nombre}}</td>
+      <td>{{=profesor.titulo}}</td>
+      <td>{{=profesor.area}}</td>
+      <td>{{=profesor.telefono}}</td>
+      <td><a href="#profesor/{{=profesor.cedula}}">
+        <input type="button" value="Detalle"/>
+      </a></td>
+    </tr>
+    {{~}}
+  </table>
+  <a href="#profAdd">
+    <input type="button" value="Agregar" id="button"/>
+  </a>
+</div>
